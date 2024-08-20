@@ -1,0 +1,27 @@
+
+public class main {
+
+    public static void main(String[] args) {
+
+        int chet = 0;
+        for (int x = 0; x < 10; x++)
+            for (int y = 0; y < 10; y++)
+                for (int z = 0; z < 10; z++)
+                    for (int m = 0; m < 10; m++)
+                        for (int n = 0; n < 10; n++)
+                            for (int k = 0; k < 10; k++) {
+                                int sum1 = x + y + z;
+                                int sum2 = m + n + k;
+                                int res = sum1 + sum2;
+                                if (sum1 == sum2 && res != 0) {
+                                    chet++;
+                                }else{
+                                    chet = chet;
+                                }
+                            }
+        System.out.println(chet);
+
+
+    }
+
+}
